@@ -1,0 +1,27 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+    double c,f,k;
+    cout<<"Enter the temperature in Celcius = ";
+    cin>>c;
+    f= (c * 9/5)+ 32;
+    cout<<"The temperature in Fehrenhite = "<<f<<endl;
+    k = c + 273.15;
+    cout<<"The temperature in Kelvin = "<<k<<endl;
+    //for fehrenite
+    cout<<"Enter the temperature in Fehrenhite = ";
+    cin>>f;
+    c = (f - 32) * 5.0 / 9.0;
+    cout<<"The temperature in Calcius = "<<c<<endl;
+    k= (f - 273.15)* 9/5 + 32 ;
+    cout<<"The temperature in Kelvin = "<<k<<endl;
+    //for kelvin
+    cout<<"Enter the temperature in Kelvin = ";
+    cin>>k;
+    c = k - 273.15;
+    cout<<"The temperature in Celcius = " <<c<<endl;
+    f = (9.0 / 5.0) * (k - 273) + 32;
+    cout<<"The temperature in Ferhenite = "<<f;
+    return 0;
+}
